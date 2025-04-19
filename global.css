@@ -43,7 +43,7 @@
     margin: 0;
     padding: 0;
     font-size: 21px;
-    outline: red 3px solid;
+    /* outline: red 3px solid; */
 }
 
 nav{
@@ -61,31 +61,27 @@ nav a{
     all: unset;
     color: var(--g_50);
     height: 70%;
-    width: auto;
-    aspect-ratio: 2/1;
+    /* width: auto; */
+    /* aspect-ratio: 2/1; */
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 1s ease-in-out;
-}
-
-nav a span{
-    all: unset;
-    font-size: 42px;
-    width: 0;
-    overflow: hidden;
-    transition: 1s ease-in-out;
+    /* transition: 1s ease-in-out; */
 }
 
 nav a i::before{
     font-size: 42px;
 }
 
-nav a:hover span{
-    width: 100%;
-    padding-right: 0.2em;
+nav a span{
+    all: unset;
+    font-size: 42px;
+    max-width: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
 
-nav a:hover{
-    width: fit-content;
+nav a:hover span{
+    max-width: 120px;
+    padding-right: 0.2em;
 }
